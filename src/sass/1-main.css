@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /*background: red;*/
+}
+
+h1, p {
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    width: 1053px;
+    margin: 0 auto;
+}
+
+.header {
+    /*padding: 8px 0;*/
+}
+
+.nav {
+    align-items: center;
+    width: 1066px;
+    margin: 6px 0;
+}
+
+.logo {
+    width: 143px;
+    margin-right: auto;
+}
+
+.contacts__wrapper {
+    flex-direction: column;
+    margin-right: 27px;
+}
+
+.contacts__address {
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Museo Sans Cyrl 300';
+    text-align: right;
+    color: #333333;
+}
+
+.contacts__phone {
+    font-size: 18.5px;
+    font-weight: 400;
+    font-family: 'Museo Sans Cyrl 700';
+    color: #333333;
+}
+
+.btn {
+    display: block;
+    max-width: 170px;
+    padding: 16px 26px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Museo Sans Cyrl 700';
+    text-decoration: none;
+    border-radius: 10px;
+    color: #333333;
+    background-color: #ffd200;
+}
+
+.description {
+    padding: 50px 0 ;
+    background-color: #f5f5f5;
+}
+
+.offer_wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer {
+    position: relative;
+    max-width: 460px;
+    font-family: 'Museo Sans Cyrl 300';
+}
+
+.offer__title {
+    position: absolute;
+    top: 19px;
+    left: -2px;
+    margin-left: 1px;
+    /*margin-bottom: 50px;*/
+    font-size: 37px;
+    font-weight: 400;
+    font-family: 'Museo Sans Cyrl 700';
+    line-height: 51px;
+    color: #333333;
+}
+
+.offer__text {
+    margin-top: 153px;
+    margin-left: 4px;
+    margin-bottom: 58px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Museo Sans Cyrl 700';
+    /*line-height: 65px;*/
+    color: #333333;
+}
+
+.offer__clock {
+    align-items: center;
+    height: 40px;
+    /*margin-bottom: 30px;*/
+    padding-top: 8px;
+    padding-left: 65px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+    background: url("../img/icon/clock.svg") no-repeat left center;
+}
+
+.offer__calculate {
+    align-items: center;
+    max-width: 275px;
+    height: 45px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+    /*padding-top: 3px;*/
+    padding-left: 65px;
+    font-size: 12.9px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    background: url("../img/icon/calculator.svg") no-repeat left center;
+}
+
+.offer__paint {
+    align-items: center;
+    max-width: 306px;
+    height: 45px;
+    padding-left: 66px;
+    margin-bottom: 16px;
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+    background: url("../img/icon/paint.svg") no-repeat left center;
+}
+
+.room {
+    /*max-width: 570px;*/
+    width: 500px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        /*width: 970px;*/
+        width: 1070px;
+    }
+
+    .offer_wrapper {
+        justify-content: center;
+    }
+
+    .offer {
+        width: 50%;
+        max-width: none;
+        margin-right: 25px;
+    }
+
+    .offer__title {
+        margin-bottom: 25px;
+        line-height: 40px;
+    }
+
+    .offer__text {
+        margin-bottom: 34px;
+        line-height: normal;
+    }
+
+    .offer__clock, .offer__calculate, .offer__paint {
+        margin-bottom: 15px;
+    }
+
+    .room {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 750px;
+    }
+
+    .offer__title {
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .offer__text {
+        margin-bottom: 34px;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    /*.offer__clock, .offer__calculate, .offer__paint {*/
+    /*    margin-bottom: 15px;*/
+    /*}*/
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .contacts__wrapper {
+        display: none;
+    }
+
+    .offer_wrapper {
+        flex-direction: column;
+    }
+
+    .offer {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .room {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 17px 0;
+    }
+
+    .container {
+        /*width: calc(100% - 27px);*/
+        width: calc(100% - 39px);
+    }
+
+    .logo {
+        width: 91px;
+        margin-right: 49px;
+    }
+
+    .btn {
+        padding: 15px 26px 14px 26px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+
+    .description {
+        /*padding: 46px 0;*/
+        padding: 42px 0;
+    }
+
+    .offer_wrapper {
+        padding-left: 5px;
+    }
+
+    .offer {
+        width: 100%;
+        margin-bottom: 38px;
+    }
+
+    .offer__title {
+        margin-bottom: 8px;
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .offer__text {
+        max-width: 197px;
+        /*margin-bottom: 28px;*/
+        margin-left: 2px;
+        margin-bottom: 27px;
+        font-size: 16px;
+    }
+
+    .offer__clock, .offer__calculate, .offer__paint {
+        margin-right: 0;
+        margin-left: -1px;
+        margin-bottom: 20px;
+        padding-left: 55px;
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .offer__paint {
+        margin-bottom: 0;
+    }
+
+    .room {
+        width: 100%;
+    }
+}
